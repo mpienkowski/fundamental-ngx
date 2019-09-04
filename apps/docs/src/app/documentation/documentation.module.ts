@@ -411,6 +411,14 @@ import { SimpleTreeExampleComponent } from './component-docs/tree/examples/simpl
 import { ExtraOptions } from '@angular/router';
 import { ShellbarAdvancedExampleComponent } from './component-docs/shellbar/examples/shellbar-advanced/shellbar-advanced-example.component';
 
+import { NotificationDocsComponent } from './component-docs/notification/notification-docs.component';
+import { NotificationDocsHeaderComponent } from './component-docs/notification/notification-docs-header/notification-docs-header.component';
+import { NotificationOpenTemplateExampleComponent } from './component-docs/notification/examples/template-as-content/notification-open-template-example.component';
+import { NotificationContentComponent } from './component-docs/notification/examples/component-as-content/notification-content.component';
+import { NotificationGroupTemplateExampleComponent } from './component-docs/notification/examples/group-notification/notification-group-template-example.component';
+import { NotificationComponentAsContentExampleComponent } from './component-docs/notification/examples/component-as-content/notification-component-as-content-example.component';
+import { NotificationOptionsExampleComponent } from './component-docs/notification/examples/notification-options/notification-options-example.component';
+import { NotificationAsObjectExampleComponent } from './component-docs/notification/examples/notification-as-object.component';
 
 @NgModule({
     declarations: [
@@ -460,6 +468,9 @@ import { ShellbarAdvancedExampleComponent } from './component-docs/shellbar/exam
         TimeDocsComponent,
         TimePickerDocsComponent,
         ToggleDocsComponent,
+        NotificationDocsComponent,
+        NotificationDocsHeaderComponent,
+        NotificationOpenTemplateExampleComponent,
         HomeDocsComponent,
         NewComponentComponent,
         DirectionalityComponent,
@@ -749,19 +760,21 @@ import { ShellbarAdvancedExampleComponent } from './component-docs/shellbar/exam
         SelectMaxHeightExampleComponent,
         DocsSectionTitleComponent,
         CalendarI18nMomentExampleComponent,
-        SelectMaxHeightExampleComponent
+        SelectMaxHeightExampleComponent,
+        NotificationGroupTemplateExampleComponent,
+        NotificationComponentAsContentExampleComponent,
+        NotificationContentComponent,
+        NotificationOptionsExampleComponent,
+        NotificationAsObjectExampleComponent
     ],
-
-    entryComponents: [ModalContentComponent, ModalInModalComponent, ModalInModalSecondComponent, AlertContentComponent],
+    entryComponents: [ModalContentComponent, ModalInModalComponent, ModalInModalSecondComponent, AlertContentComponent, NotificationContentComponent],
     imports: [
         MarkdownModule.forChild(),
         CommonModule,
         FormsModule,
         ReactiveFormsModule,
         RouterModule.forChild(ROUTES),
-
         SchemaModule.forRoot(COMPONENT_SCHEMAS),
-
         FundamentalNgxCoreModule,
         HttpClientModule,
         CdkTableModule,
