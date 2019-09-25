@@ -9,10 +9,7 @@ import { Router } from '@angular/router';
 export class DocumentationComponent implements OnInit {
     @ViewChild('content', {static: true }) contentElRef: ElementRef;
 
-    guides = [
-        { url: 'home', name: 'Home' },
-        { url: 'new-component', name: 'New Component' }
-    ];
+    guides = [{ url: 'home', name: 'Home' }, { url: 'new-component', name: 'New Component' }];
 
     components = [
         { url: 'action-bar', name: 'Action Bar' },
@@ -76,8 +73,7 @@ export class DocumentationComponent implements OnInit {
     smallScreen: boolean = window.innerWidth < 992;
     sideCollapsed: boolean = window.innerWidth < 576;
 
-    constructor(private router: Router) {
-    }
+    constructor(private router: Router) {}
 
     ngOnInit() {
         // sort the list alphabetically
