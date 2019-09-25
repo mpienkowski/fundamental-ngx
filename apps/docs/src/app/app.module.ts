@@ -15,10 +15,7 @@ const routes: Routes = [
     declarations: [AppComponent],
     imports: [
         BrowserAnimationsModule,
-        RouterModule.forRoot(routes, {
-            scrollPositionRestoration: 'enabled',
-            anchorScrolling: 'enabled'
-        }),
+        RouterModule.forRoot(routes),
         HttpClientModule,
         MarkdownModule.forRoot({ loader: HttpClient }),
     ],
