@@ -176,23 +176,12 @@ export const ROUTES: Routes = [
                     { path: 'api', component: ApiComponent, data: { content: API_FILES.form } }
                 ]
             },
-<<<<<<< HEAD
-            { path: 'layoutGrid', component: LayoutGridDocsHeaderComponent, children: [
-                    { path: '', component: LayoutGridDocsComponent},
-                    { path: 'api', component: ApiComponent, data: {content: API_FILES.layoutGrid}}
-                ]
-            },
-            { path: 'list', component: ListHeaderComponent, children: [
-                    { path: '', component: ListDocsComponent},
-                    { path: 'api', component: ApiComponent, data: {content: API_FILES.list}}
-=======
             {
                 path: 'combobox',
                 component: ComboboxHeaderComponent,
                 children: [
                     { path: '', component: ComboboxDocsComponent },
                     { path: 'api', component: ApiComponent, data: { content: API_FILES.combobox } }
->>>>>>> fixed links to work
                 ]
             },
             {
@@ -281,6 +270,22 @@ export const ROUTES: Routes = [
                 children: [
                     { path: '', component: InputGroupDocsComponent },
                     { path: 'api', component: ApiComponent, data: { content: API_FILES.inputGroup } }
+                ]
+            },
+            { 
+                path: 'layoutGrid', 
+                component: LayoutGridDocsHeaderComponent, 
+                children: [
+                    { path: '', component: LayoutGridDocsComponent},
+                    { path: 'api', component: ApiComponent, data: {content: API_FILES.layoutGrid}}
+            ]
+            },
+            { 
+                path: 'list', 
+                component: ListHeaderComponent, 
+                children: [
+                    { path: '', component: ListDocsComponent},
+                    { path: 'api', component: ApiComponent, data: {content: API_FILES.list}}
                 ]
             },
             {
