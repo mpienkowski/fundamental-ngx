@@ -19,7 +19,7 @@ import { DynamicComponentService } from '../../utils/dynamic-component/dynamic-c
     `
 })
 class TemplateTestComponent {
-    @ViewChild('testTemplate') templateRef: TemplateRef<any>;
+    @ViewChild('testTemplate', { static: false }) templateRef: TemplateRef<any>;
 }
 
 @NgModule({

@@ -47,7 +47,7 @@ export class NotificationComponent implements AfterViewInit {
     @Input()
     type: NotificationType;
 
-    @ViewChild('vc', { read: ViewContainerRef })
+    @ViewChild('vc', { read: ViewContainerRef, static: false })
     containerRef: ViewContainerRef;
 
     id: string;
