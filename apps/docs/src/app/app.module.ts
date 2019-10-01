@@ -8,7 +8,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 const routes: Routes = [
     { path: '', loadChildren: () => import('./documentation/documentation.module').then(m => m.DocumentationModule) },
-    { path: '**', redirectTo: '/home' }
+    { path: 'core', loadChildren: () => import('./core/core-documentation.module').then(m => m.CoreDocumentationModule) },
+    { path: '**', redirectTo: '/core' }
 ];
 
 @NgModule({
